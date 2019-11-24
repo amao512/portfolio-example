@@ -1,19 +1,18 @@
-let gulp 		= require('gulp'),
-	rename 		= require('gulp-rename'),
-	sass 		= require('gulp-sass'),
+let gulp = require('gulp'),
+	rename = require('gulp-rename'),
+	sass = require('gulp-sass'),
 	browserSync = require('browser-sync').create();
 
-const cssStyle = done => {
-	gulp.src('src/sass/**.scss')
-		.pipe(sass({
-			errorLogToConsole: true,
-			outputStyle: 'compressed'
+const css_style = done => {
+	gulp.src('src/sass/**/*.scss')
+	.pipe(sass({
+		errorLogToConsole: true,
+		outputStyle: 'compressed'
 		}))
-		.on('error', console.error.bind(console))
-		.pipe(rename({suffix: '.min'}))
-		.pipe(gulp.dest('dist/css/'))
-		.pipe(browserSync.stream());
-	
+	.on('error', console.error.bind(console))
+	.pipe(rename({suffix: '.min'}))
+	.pipe(gulp.dest('dist/css/'))
+	.pipe(browserSync.stream());
 	done();
 }
 
@@ -24,7 +23,6 @@ const sync = done => {
 		},
 		port: 3000
 	});
-
 	done();
 }
 
@@ -34,9 +32,8 @@ const browserReload = done => {
 }
 
 const watchFiles = () => {
-	gulp.watch('./src/sass/**/*', cssStyle);
+	gulp.watch('src/sass/**/*', css_style);
 	gulp.watch('./**/*.html', browserReload);
-	gulp.watch('./**/*.js', browserReload);
 }
 
-gulp.task('default', gulp.parallel(watchFiles, sync));
+gulp.task('default', gulp.parallel(sync, watchFiles));

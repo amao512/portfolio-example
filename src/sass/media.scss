@@ -1,383 +1,121 @@
-@media screen and (max-width: 700px){
-	.pop-up__section {
-		width: 630px;
-		.head-part {
-			padding: 30px 70px 30px 40px;
-		}
-	}
-	.email-part {
-		padding: 50px 30px 25px 30px;
-	}
-	.footer-part {
-		padding: 30px 30px 30px 30px;
-	}
-}
-
-@media screen and (max-width: 650px){
-	.pop-up__section {
-		top: 15%;
-		width: 600px;
-		.head-part {
-			padding: 20px 60px 20px 30px;
-		}
-	}
-	.email-part {
-		padding: 30px 30px 25px 30px;
-		.email-part__forms {
-			.form__button {
-				padding: 10px 20px 10px 20px;
-			}
-		}
-		.email-part__users {
-			.user {
-				grid-template-columns: .3fr 2fr 1.5fr 1.4fr;
-				grid-column-gap: 5px;
-				.data-user {
-					margin-left: 10px;
-				}
-			}
-			.second-user {
-				grid-template-columns: .3fr 2fr 1.5fr 1fr;
-			}
-		}
-	}
-	.footer-part {
-		padding: 15px 30px 15px 30px;
-		.footer-part__button {
-			.input__dropdown {
-				select {
-					padding-left: 17px;
-					height: 40px;
-					width: 101px;
-				}
-				&:after {
-				  right: 15px;
-				  top: 50%;
-				  transform: translateY(-50%);
-				}
-			}
-			button {
-				padding: 10px 47px;
+@media screen and (max-width: 720px){
+	.section__skills {
+		.skills {
+			.skills__tech {
+				grid-template-columns: 1fr 1fr;
+				grid-row-gap: 25px;
 			}
 		}
 	}
 }
 
-@media screen and (max-width: 620px){
-	.pop-up__section {
-		top: 11%;
-		width: 550px;
-	}
-	.email-part {
-		padding: 30px 30px 25px 30px;
-		.email-part__forms {
-			display: block;
-			.form__input {
-				width: 100%;
-				margin-bottom: 10px;
-				input {
-					width: 350px;
-				}
-			}
-			.form__button {
-				width: 100%;
-			}
-		}
-		.email-part__users {
-			margin-top: 27px;
-			overflow-y: scroll;
-			.user {
-				grid-template-columns: .1fr 2fr 2fr;
-				.time-user {
-					display: none;
-				}
-			}
-		}
-	}
-	.footer-part {
-		padding: 15px 30px 15px 30px;
-		grid-template-columns: 1fr;
-		grid-row-gap: 10px;
-		text-align: center;
-		.footer-part__button {
-			justify-self: center;
-			.input__dropdown {
-				&:after {
-				  top: 50%;
-				}
+@media screen and (max-width: 630px){
+	.section__header {
+		padding-top: 25px;
+		.header-nav {
+			nav {
+				padding-bottom: 25px;
 			}
 		}
 	}
 }
 
-@media screen and (max-width: 560px) {
-	.pop-up__section {
-		top: 12%;
-		width: 500px;
-		.head-part {
-			padding: 15px 50px 15px 30px;
-		}
-	}
-
-	.email-part {
-		.email-part__forms {
-			.form__input {
-				input {
-					width: 300px;
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 515px) {
-	.pop-up__section {
-		top: 12%;
-		width: 470px;
-		.head-part {
-			padding: 15px 45px 15px 20px;
-		}
-	}
-	.email-part {
-		padding: 30px 20px 25px 20px;
-	}
-	.footer-part {
-		padding: 15px 20px 15px 20px;
-	}
-}
-
-@media screen and (max-width: 490px){
-	.pop-up__section {
-		top: 15%;
-		width: 430px;
-		.head-part {
-			.head-part__title {
-				font-size: 20px;
-			}
-		}
-	}
-
-	.email-part {
-		.email-part__forms {
-			.form__input {
-				input {
-					width: 260px;
-				}
-			}
-		}
-	}
-
-	.footer-part {
-		.footer-part__text {
+@media screen and (max-width: 540px){
+	.section__header {
+		.header-nav {
 			display: none;
+		}
+		.header-inform {
+			padding-top: 10px;
+			padding-bottom: 50px;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 0;
+			.open-menu {
+				grid-column: 2;
+				grid-row: 1;
+				align-self: start;
+			}
+			.header-inform__prof-age-city {
+				justify-self:start;
+				margin-top: 23px;
+				margin-bottom: 36px;
+			}
+			.header-inform__language {
+				display: none;
+			}
+			.header-inform__image {
+				grid-column: 1/3;
+			}
 		}
 	}
 }
 
 @media screen and (max-width: 440px){
-	.pop-up__section {
-		width: 400px;
-	}
-
-	.email-part {
-		padding: 20px 20px 20px 20px;
-		.email-part__forms {
-			.form__input {
-				input {
-					width: 230px;
-				}
-			}
+	.section__header {
+		.hidden-menu {
+			height: 100%;
 		}
-		.email-part__users {
-			.user {
-				margin-bottom: 15px;
-				.data-user {
-					font-size: 11px;
-				}
+	}
+	.section__skills {
+		.skills {
+			.skills__tech {
+				grid-template-columns: 1fr;
+				grid-row-gap: 25px;
 			}
 		}
 	}
 }
 
-@media screen and (max-width: 410px){
-	.pop-up__section {
-		top: 10%;
-		width: 350px;
-	}
-	.email-part {
-		padding: 10px 20px 10px 20px;
-		.email-part__users {
-			margin-top: 15px;
+@media screen and (max-width: 375px){
+	.section__header {
+		.hidden-menu {
+			height: 100%;
 		}
-		.email-part__forms {
-			.form__input {
-				padding: 0 5px 0 7px;
-				input {
-					width: 190px;
-					font-size: 11px;
+		.header-inform {
+			.header-inform__image {
+				.desktop-img {
+					display: none;
 				}
-				.input__dropdown {
-					position: relative;
-					margin-left: 10px;
-					select {
-						font-size: 11px;
-					}
-				}
-			}
-			.form__button {
-				font-size: 11px;
-			}
-		}
-		.email-part__users {
-			// text-align: center;
-			.user {
-				grid-template-columns: 1fr 2fr;
-				.img-user {
-					justify-self: end;
-				}
-				.btn-user {
-					grid-column: 1/3;
-					justify-self: center;
-					button {
-						width: 260px;
-					}
+				.mobile-img {
+					display: block;
 				}
 			}
 		}
 	}
-
-	.footer-part {
-		.footer-part__button {
-			button {
-				font-size: 11px;
-			}
+	.section__about-me {
+		padding: 81px 0;
+	}
+	.section__skills {
+		.skills {
+			padding-top: 83px;
+			padding-bottom: 98px;
+			text-align: center;
 		}
+	}
+	.section__portfolio {
+		padding-top: 81px;
+	}
+	.section__footer {
+		padding-top: 82px;
+		padding-bottom: 90px;
 	}
 }
 
-@media screen and (max-width: 360px){
-	.pop-up__section {
-		top: 8%;
-		width: 320px;
+@media screen and (max-width: 340px){
+	.container {
+		padding: 0 20px;
 	}
-
-	.email-part {
-		padding: 10px 20px 10px 20px;
-		.email-part__users {
-			margin-top: 15px;
-		}
-		.email-part__forms {
-			.form__input {
-				padding: 0 5px 0 7px;
-				input {
-					width: 170px;
-				}
-				.input__dropdown {
-					margin-left: 5px
-				}
-			}
-		}
-		.email-part__users {
-			// text-align: center;
-			.user {
-				grid-template-columns: 1fr 2fr;
-				.img-user {
-					justify-self: end;
-				}
-				.btn-user {
-					grid-column: 1/3;
-					justify-self: center;
-					margin-top: 5px;
-					button {
-						width: 240px;
-					}
-				}
-			}
+	.hidden-menu {
+		.hidden-menu__close-part {
+			margin-right: 20px;
 		}
 	}
-}
-
-@media screen and (max-width: 330px) {
-	.pop-up__section {
-		top: 9%;
-		width: 300px;
-		.head-part {
-			.head-part__title {
-				font-size: 18px;
-			}
-			.close__pop-up {
-				font-size: 20px;
-			}
-		}
-	}
-
-	.email-part {
-		padding: 10px 15px 10px 15px;
-		.email-part__users {
-			margin-top: 15px;
-		}
-		.email-part__forms {
-			.form__input {
-				padding: 0 5px 0 7px;
-				input {
-					width: 150px;
+	.section__footer {
+		.footer {
+			.footer__form {
+				.form__question {
+					width: 100%;
 				}
-			}
-		}
-		.email-part__users {
-			// text-align: center;
-			.user {
-				grid-template-columns: 1fr 3fr;
-				.img-user {
-					justify-self: end;
-				}
-				.btn-user {
-					grid-column: 1/3;
-					justify-self: center;
-					margin-top: 5px;
-					button {
-						width: 200px;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 300px){
-	.pop-up__section {
-		top: 9%;
-		width: 280px;
-	}
-
-	.email-part {
-		padding: 10px 15px 10px 15px;
-		.email-part__users {
-			margin-top: 15px;
-		}
-		.email-part__forms {
-			.form__input {
-				padding: 0 5px 0 7px;
-				input {
-					width: 140px;
-				}
-			}
-		}
-	}
-
-	.footer-part {
-		.footer-part__button {
-			.input__dropdown {
-				select {
-
-				}
-				&:after {
-					top: 53%;
-				}
-			}
-			button {
-				font-size: 11px;
-				padding: 5px 40px;
 			}
 		}
 	}
