@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	  <a class="navbar-brand" href="#">Menu</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Link</a>
+	      </li>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link pop-up" href="#">Invitation</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<div class="overlay">
+		<div class="pop-up__section">
+			<div class="head-part">
+				<h1 class="head-part__title">Invite people to project</h1>
+				<div class="close__pop-up"><span></span></div>
+			</div>
+
+			<div class="email-part">
+				<div class="email-part__forms">
+					<div class="form__input">
+						<i class="material-icons">search</i>
+						<input type="text" placeholder="Name or email" class="input">
+						<div class="input__dropdown">
+							<select name="edit" id="">
+								<option value="can edit">Can edit</option>
+							</select>
+						</div>
+					</div>
+					<button class="form__button">Invite 1 person</button>
+				</div>
+
+				<div class="email-part__users">
+					<div class="user first-user">
+						<div class="img-user">
+							<img src="dist/img/Rectangle 28.10.png" alt="">
+						</div>
+						<div class="data-user">
+							<p class="data-user__name">Milan Gladis (Owner)</p>
+							<span class="data-user__email">hello@milangladis.com</span>
+						</div>
+						<div class="time-user">
+							<span>Spent 3h 34mins</span>
+						</div>
+						<div class="btn-user">
+							<button>Transfer ownership</button>
+						</div>
+					</div>
+
+					<div class="user second-user">
+						<div class="img-user">
+							<img src="dist/img/Rectangle 28.11.png" alt="">
+						</div>
+						<div class="data-user">
+							<p class="data-user__name">Emma Watson (Owner)</p>
+							<span class="data-user__email">emma@watson.com</span>
+						</div>
+						<div class="time-user">
+							<span>Spent 3h 34mins</span>
+						</div>
+						<div class="btn-user">
+							<button>Revoke Access</button>
+						</div>
+					</div>
+					<div class="user third-user">
+						<div class="img-user">
+							<i class="material-icons">link</i>
+						</div>
+						<div class="data-user">
+							<p class="data-user__name">Public link</p>
+							<span class="data-user__email">http://lor.em/l296gdk6</span>
+						</div>
+						<div class="time-user">
+						</div>
+						<div class="btn-user">
+							<button>Revoke link</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-part">
+				<p class="footer-part__text">Or share this Project with Public link</p>
+				<div class="footer-part__button">
+					<div class="input__dropdown">
+						<select name="edit" id="">
+							<option value="can edit">Can edit</option>
+						</select>
+					</div>
+					<button>Copy link</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="dist/js/script.js"></script>
+</body>
+</html>
